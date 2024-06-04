@@ -111,6 +111,16 @@ execute_process(COMMAND uname -m OUTPUT_VARIABLE OARCH)
         endif()         
     endif()
 
+find_package(CURL REQUIRED)
+find_package(OpenSSL REQUIRED)
+
+set(CURL_INC_DIR ${CURL_INCLUDE_DIR})
+set(CURL_LIB_DIR ${CURL_LIBRARIES})
+set(OPENSSL_INC_DIR ${OPENSSL_INCLUDE_DIR})
+set(OPENSSL_LIB_DIR ${OPENSSL_LIBRARIES})
+
+
+
 message(STATUS "CURL_INC_DIR: ${CURL_INC_DIR}")
 message(STATUS "CURL_LIB_DIR: ${CURL_LIB_DIR}")
 message(STATUS "OPENSSL_INC_DIR: ${OPENSSL_INC_DIR}")
