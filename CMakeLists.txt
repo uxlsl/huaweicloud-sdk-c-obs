@@ -266,4 +266,5 @@ unset(SPDLOG_LIB_DIR CACHE)
 #)
 
 
+install(TARGETS eSDKOBS DESTINATION lib)
 
