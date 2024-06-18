@@ -255,11 +255,11 @@ unset(SPDLOG_LIB_DIR CACHE)
 #  NO_CHECK_REQUIRED_COMPONENTS_MACRO
 #  )
 
-install(FILES
-	${CMAKE_CURRENT_BINARY_DIR}/eSDKOBS.cmake
+#install(FILES
+#	${CMAKE_CURRENT_BINARY_DIR}/eSDKOBS.cmake
   #${CMAKE_CURRENT_BINARY_DIR}/MathFunctionsConfigVersion.cmake
-  DESTINATION lib/cmake/MathFunctions
-  )
+  #  DESTINATION lib/cmake/MathFunctions
+  #)
 
 #export(EXPORT eSDKOBS 
 #  FILE "${CMAKE_CURRENT_BINARY_DIR}/MathFunctionsTargets.cmake"
