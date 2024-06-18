@@ -267,4 +267,5 @@ unset(SPDLOG_LIB_DIR CACHE)
 
 
 install(TARGETS eSDKOBS DESTINATION lib)
+install(FILES source/eSDK_OBS_API/eSDK_OBS_API_C++/inc/eSDKOBS.h DESTINATION include)
 
