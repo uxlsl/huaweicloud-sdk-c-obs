@@ -44,7 +44,7 @@ fi
 #else
 export openssl_version=openssl-1.1.1k
 export curl_version=curl-7.78.0
-export pcre_version=pcre-8.39
+export pcre_version=pcre-8.45
 export iconv_version=iconv-1.15
 export libxml2_version=libxml2-2.9.9
 export cjson_version=cjson-1.7.15
@@ -166,9 +166,9 @@ cp -f cmake-build/cmake/lib/*.so lib
 cp -f ./../../../platform/huaweisecurec/include/* include
 cp -f ./../../../platform/huaweisecurec/lib/linux/libsecurec.so lib
 cp -af ./../../../platform/eSDK_LogAPI_V2.1.10/C/linux_64/libeSDKLogAPI.so lib
-#cp -af ./../../../build/script/Provider/build/linux/${curl_version}/lib/* lib
+cp -af ./../../../build/script/Provider/build/linux/${curl_version}/lib/* lib
 cp -af ./../../../build/script/Provider/build/linux/${libxml2_version}/lib/* lib
-#cp -af ./../../../build/script/Provider/build/linux/${openssl_version}/lib/* lib 
+cp -af ./../../../build/script/Provider/build/linux/${openssl_version}/lib/* lib 
 cp -af ./../../../build/script/Provider/build/linux/${pcre_version}/lib/* lib 
 cp -af ./../../../build/script/Provider/build/linux/${iconv_version}/lib/* lib 
 cp -af ./../../../build/script/Provider/build/linux/${cjson_version}/lib/* lib
